@@ -1,11 +1,10 @@
-require'nvim-tree'.setup {
+require('nvim-tree').setup({
   disable_netrw = true,
   hijack_netrw = true,
-  open_on_tab = false,
   hijack_cursor = false,
   update_cwd = true,
   diagnostics = {
-    enable = false,
+    enable = true,
     icons = {
       hint = "",
       info = "",
@@ -47,5 +46,5 @@ require'nvim-tree'.setup {
       quit_on_open = false,
     },
   },
-}
+})
 
