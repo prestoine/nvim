@@ -1,6 +1,7 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
+
 -- Function to create and save a new file
 local function create_and_save_new_file()
   vim.cmd('enew') -- Open a new empty buffer
@@ -52,12 +53,12 @@ map('n', '<Leader>k', '<C-w>k', opts)        -- Move to the upper window
 -- Open LazyGit in a new split
 map('n', '<Leader>g', ':LazyGit<CR>', opts)
 
--- Open terminal in a new tab
-map('n', '<Leader>tt', ':tabnew | terminal<CR>', opts)
-
 -- Open terminal in a horizontal split
 map('n', '<Leader>th', ':split | terminal<CR>', opts)
 
 -- Open terminal in a vertical split
 map('n', '<Leader>tv', ':vsplit | terminal<CR>', opts)
+
+-- Exit terminal mode with `Ctrl-g`
+vim.api.nvim_set_keymap('t', '<C-t>', [[<C-\><C-n>]], {noremap = true, silent = true})
 

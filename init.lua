@@ -2,6 +2,13 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+vim.o.termguicolors = true
+
+-- Terminal background transparency
+vim.cmd('hi Normal guibg=NONE ctermbg=NONE')  -- Set normal background to transparent
+vim.cmd('hi LineNr guibg=NONE ctermbg=NONE')  -- Set line number background to transparent
+
+
 -- Packer bootstrap code
 local fn = vim.fn
 local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
@@ -60,6 +67,12 @@ packer.startup(function(use)
   use 'folke/which-key.nvim'
   use { 'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons' }
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
+  use {
+    'norcalli/nvim-colorizer.lua',
+    config = function() require'colorizer'.setup() end,
+  }
+
+
 
   if PACKER_BOOTSTRAP then
     require('packer').sync()
