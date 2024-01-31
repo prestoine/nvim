@@ -21,14 +21,14 @@ map('n', '<Leader>k', '<C-w>k', opts)
 
 -- Save and Quit
 map('n', '<Leader>s', ':w<CR>', opts)  -- Save
-map('n', '<Leader>q', ':q<CR>', opts)  -- Quit current window
-map('n', '<Leader>Q', ':wa<CR>:qa<CR>', opts)  -- Save all and quit
+map('n', '<Leader>w', ':q<CR>', opts)  -- Quit current window
+map('n', '<Leader>q', ':wa<CR>:qa<CR>', opts)  -- Save all and quit
 
 -- Telescope key mappings
-map('n', '<Leader>ff', ':Telescope find_files<CR>', opts)
-map('n', '<Leader>fg', ':Telescope live_grep<CR>', opts)
-map('n', '<Leader>fb', ':Telescope buffers<CR>', opts)
-map('n', '<Leader>fh', ':Telescope help_tags<CR>', opts)
+map('n', '<Leader>fs', ':Telescope find_files<CR>', opts)
+map('n', '<Leader>cs', ':Telescope live_grep<CR>', opts)
+map('n', '<Leader>tb', ':Telescope buffers<CR>', opts)
+map('n', '<Leader>th', ':Telescope help_tags<CR>', opts)
 
 -- Open a new empty buffer and prompt for a filename to save
 map('n', '<Leader>nf', '', { noremap = true, silent = true, callback = create_and_save_new_file })
@@ -51,4 +51,13 @@ map('n', '<Leader>k', '<C-w>k', opts)        -- Move to the upper window
 
 -- Open LazyGit in a new split
 map('n', '<Leader>g', ':LazyGit<CR>', opts)
- 
+
+-- Open terminal in a new tab
+map('n', '<Leader>tt', ':tabnew | terminal<CR>', opts)
+
+-- Open terminal in a horizontal split
+map('n', '<Leader>th', ':split | terminal<CR>', opts)
+
+-- Open terminal in a vertical split
+map('n', '<Leader>tv', ':vsplit | terminal<CR>', opts)
+
