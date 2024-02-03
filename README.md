@@ -1,7 +1,6 @@
 ### Nvim Keybindings Cheat Sheet
 
 #### File and Buffer Management
-- **Create New File**: `<Leader>nf` - Opens a new buffer and prompts for filename to save.
 - **Save File**: `<Leader>s` - Saves the current buffer.
 - **Quit Current Window**: `<Leader>c` - Closes the current window.
 - **Save All and Quit**: `<Leader>q` - Saves all buffers and quits Neovim.
