@@ -22,33 +22,31 @@ map('n', '<Leader>k', '<C-w>k', opts)
 
 -- Save and Quit
 map('n', '<Leader>s', ':w<CR>', opts)  -- Save
-map('n', '<Leader>w', ':q<CR>', opts)  -- Quit current window
+map('n', '<Leader>c', ':q<CR>', opts)  -- Quit current window
 map('n', '<Leader>q', ':wa<CR>:qa<CR>', opts)  -- Save all and quit
 
 -- Telescope key mappings
 map('n', '<Leader>fs', ':Telescope find_files<CR>', opts)
-map('n', '<Leader>cs', ':Telescope live_grep<CR>', opts)
+map('n', '<Leader>gs', ':Telescope live_grep<CR>', opts)
 map('n', '<Leader>tb', ':Telescope buffers<CR>', opts)
-map('n', '<Leader>th', ':Telescope help_tags<CR>', opts)
+map('n', '<Leader>t?', ':Telescope help_tags<CR>', opts)
 
 -- Open a new empty buffer and prompt for a filename to save
-map('n', '<Leader>nf', '', { noremap = true, silent = true, callback = create_and_save_new_file })
+-- not working, opens in wrong location: map('n', '<Leader>nf', '', { noremap = true, silent = true, callback = create_and_save_new_file })
 
--- Open a new tab and split windows
-map('n', '<Leader>hw', ':split<CR>', opts)   -- Horizontal split
-map('n', '<Leader>vw', ':vsplit<CR>', opts)  -- Vertical split
 -- Harpoon marking and accessing files
-map('n', '<Leader>H', ':lua require("harpoon.mark").add_file()<CR>', opts)
-map('n', '<Leader>fl', ':lua require("harpoon.ui").toggle_quick_menu()<CR>', opts)
+map('n', '<Leader>HH', ':lua require("harpoon.mark").add_file()<CR>', opts)
+map('n', '<Leader>HL', ':lua require("harpoon.ui").toggle_quick_menu()<CR>', opts)
 map('n', '<Leader><Tab>', ':lua require("harpoon.ui").nav_next()<CR>', opts)
 
+-- Access Harpoon marked files with <Leader>h<number>
+for i = 1, 9 do
+    map('n', '<Leader>H' .. i, ':lua require("harpoon.ui").nav_file(' .. i .. ')<CR>', opts)
+end
+
 -- Window and split management
-map('n', '<Leader>hw', ':split<CR>', opts)   -- Horizontal split
-map('n', '<Leader>vw', ':vsplit<CR>', opts)  -- Vertical split
-map('n', '<Leader>l', '<C-w>l', opts)        -- Move to the right window
-map('n', '<Leader>h', '<C-w>h', opts)        -- Move to the left window
-map('n', '<Leader>j', '<C-w>j', opts)        -- Move to the lower window
-map('n', '<Leader>k', '<C-w>k', opts)        -- Move to the upper window
+map('n', '<Leader>wh', ':split<CR>', opts)   -- Horizontal split
+map('n', '<Leader>wv', ':vsplit<CR>', opts)  -- Vertical split
 
 -- Open LazyGit in a new split
 map('n', '<Leader>g', ':LazyGit<CR>', opts)
@@ -58,6 +56,23 @@ map('n', '<Leader>th', ':split | terminal<CR>', opts)
 
 -- Open terminal in a vertical split
 map('n', '<Leader>tv', ':vsplit | terminal<CR>', opts)
+
+-- Resize with Ctrl + HJKL
+map('n', '<C-l>', ':vertical resize -2<CR>', opts)  -- Shrink window left
+map('n', '<C-j>', ':resize +2<CR>', opts)           -- Grow window down
+map('n', '<C-k>', ':resize -2<CR>', opts)           -- Shrink window up
+map('n', '<C-h>', ':vertical resize +2<CR>', opts)  -- Grow window right
+
+-- New tab
+map('n', '<Leader>nw', ':tabnew<CR>', opts)
+
+-- Switch to specific window number
+for i = 1, 9 do
+    map('n', '<Leader>W'..i, i..'gt', opts)
+end
+
+-- terminal in new tab
+map('n', '<Leader>tt', ':tabnew | terminal<CR>', opts)
 
 -- Exit terminal mode with `Ctrl-g`
 vim.api.nvim_set_keymap('t', '<C-t>', [[<C-\><C-n>]], {noremap = true, silent = true})
