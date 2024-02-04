@@ -38,7 +38,7 @@ require('nvim-tree').setup({
     signcolumn = "yes",
   },
   trash = {
-    cmd = "trash",
+    cmd = "trash-put",
     require_confirm = true,
   },
   actions = {
