@@ -83,3 +83,5 @@ map('n', '<Leader>tt', ':tabnew | terminal<CR>', opts)
 -- Exit terminal mode with `Ctrl-g`
 vim.api.nvim_set_keymap('t', '<C-t>', [[<C-\><C-n>]], {noremap = true, silent = true})
 
+--Open DB GUI
+vim.api.nvim_set_keymap('n', '<Leader>db', ':DBUI<CR>', {noremap = true, silent = true})

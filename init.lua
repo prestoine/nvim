@@ -96,11 +96,8 @@ packer.startup(function(use)
 	  end
 	}
     use 'junegunn/goyo.vim'
-    use 'lukas-reineke/indent-blankline.nvim'
     use 'github/copilot.vim'
     use 'neovim/nvim-lspconfig'
-
-
 
 	if PACKER_BOOTSTRAP then
 		require('packer').sync()
