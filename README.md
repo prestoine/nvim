@@ -6,6 +6,7 @@
 cd ~/.config/nvim
 ```
 
+
 #### Clone this repo
 ##### SSH
 ```
