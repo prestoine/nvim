@@ -7,8 +7,12 @@ cd ~/.config/nvim
 ```
 
 #### Clone this repo
+##### SSH
 ```
-git clone ...
+git clone git@github.com:desouzapreston/nvim.git
+```
+```
+git clone git@github.com:desouzapreston/nvim.git
 ```
 
 #### Put this at the end of your `~/.bashrc` file
