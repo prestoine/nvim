@@ -1,11 +1,12 @@
-## Installation Instructions
+# Installation Instructions
 
 #### Change your directory
 ##### If the path doesn't exist, create it.
 ```
 cd ~/.config/nvim
 ```
----
+***
+
 #### Clone this repo
 ##### SSH
 ```
@@ -15,6 +16,7 @@ git clone git@github.com:desouzapreston/nvim.git
 ```
 git clone https://github.com/desouzapreston/nvim.git
 ```
+***
 
 #### Put this at the end of your `~/.bashrc` file
 ##### Open the file
@@ -28,6 +30,7 @@ if [ -f ~/.config/nvim/terminal/prompt.sh ]; then
     . ~/.config/nvim/terminal/prompt.sh
 fi
 ```
+***
 
 #### Update the plugins
 ##### Open Neovim
@@ -44,10 +47,14 @@ nvim .
 ```
 :PackerSync
 ```
-##### Close Neovim and reopen it, use the keyboard shortcuts below, troubleshoot with GPT good luck!
+***
 
-### Keyboard shortcuts below.
-#### If a couple of them don't make sense, ask chatgpt to walk you through a step-by-step tutorial, they're all important.
+##### Close Neovim and reopen it, use the keyboard shortcuts below, troubleshoot with GPT good luck!
+***
+
+# Keyboard shortcuts below.
+
+#### Instructions: Copy and paste the keyboard shortcuts into chat.openai.com and ask "Please give me a step by step tutorial when using neovim with custom keyboard shortcuts. I am new to neovim and need to make sure I've gotten the hang of one shortcut section until moving onto the next. If I encounter errors please help me troubleshoot them and then continue on learning the full keyboard mappings below: "
 
 ### Nvim Keybindings Cheat Sheet
 
