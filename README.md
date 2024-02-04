@@ -11,17 +11,40 @@ cd ~/.config/nvim
 ```
 git clone git@github.com:desouzapreston/nvim.git
 ```
+##### HTTPS
 ```
-git clone git@github.com:desouzapreston/nvim.git
+git clone https://github.com/desouzapreston/nvim.git
 ```
 
 #### Put this at the end of your `~/.bashrc` file
+##### Open the file
+```
+nvim ~/.bashrc
+```
+##### Add this block to the file
 ```
 # Source NVim terminal customizations
 if [ -f ~/.config/nvim/terminal/prompt.sh ]; then
     . ~/.config/nvim/terminal/prompt.sh
 fi
 ```
+
+#### Update the plugins
+##### Open Neovim
+```
+nvim .
+```
+##### Get the plugins (press : to run Packer commands
+```
+:PackerInstall
+```
+```
+:PackerUpdate
+```
+```
+:PackerSync
+```
+##### Close Neovim and reopen it, use the keyboard shortcuts below, troubleshoot with GPT good luck!
 
 ### Keyboard shortcuts below.
 #### If a couple of them don't make sense, ask chatgpt to walk you through a step-by-step tutorial, they're all important.
