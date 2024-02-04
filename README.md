@@ -1,3 +1,22 @@
+## Installation Instructions
+
+#### Change your directory
+##### If the path doesn't exist, create it.
+```
+cd ~/.config/nvim
+```
+
+#### Put this at the end of your `~/.bashrc` file
+```
+# Source NVim terminal customizations
+if [ -f ~/.config/nvim/terminal/prompt.sh ]; then
+    . ~/.config/nvim/terminal/prompt.sh
+fi
+```
+
+### Keyboard shortcuts below.
+#### If a couple of them don't make sense, ask chatgpt to walk you through a step-by-step tutorial, they're all important.
+
 ### Nvim Keybindings Cheat Sheet
 
 #### File and Buffer Management

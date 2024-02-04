@@ -1,5 +1,5 @@
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "c", "lua", "python", "javascript", "typescript", "html", "css", "bash", "json", "yaml", "go", "rust" }, -- Add more languages here
+  ensure_installed = { "c", "lua", "python", "javascript", "typescript", "html", "css", "bash", "json", "yaml", "go", "rust", "markdown"}, 
   sync_install = false,
   auto_install = true,
   highlight = {
@@ -10,4 +10,5 @@ require'nvim-treesitter.configs'.setup {
     enable = true, -- Enable Treesitter-based indentation
   },
 }
+
 

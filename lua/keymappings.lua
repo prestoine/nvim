@@ -58,10 +58,10 @@ map('n', '<Leader>th', ':split | terminal<CR>', opts)
 map('n', '<Leader>tv', ':vsplit | terminal<CR>', opts)
 
 -- Resize with Ctrl + HJKL
-map('n', '<C-l>', ':vertical resize -2<CR>', opts)  -- Shrink window left
+map('n', '<C-h>', ':vertical resize -2<CR>', opts)  -- Shrink window left
 map('n', '<C-j>', ':resize +2<CR>', opts)           -- Grow window down
 map('n', '<C-k>', ':resize -2<CR>', opts)           -- Shrink window up
-map('n', '<C-h>', ':vertical resize +2<CR>', opts)  -- Grow window right
+map('n', '<C-l>', ':vertical resize +2<CR>', opts)  -- Grow window right
 
 -- New tab
 map('n', '<Leader>nw', ':tabnew<CR>', opts)
