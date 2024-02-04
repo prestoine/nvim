@@ -1,3 +1,12 @@
+# Prerequisites
+### Before installing the Neovim configuration, ensure you have the following installed:
+```
+Neovim (0.5 or newer)
+Node.js and npm (for installing LSP servers and other tools)
+Git (for cloning the repository and installing some plugins)
+```
+*** 
+
 # Installation Instructions
 
 #### Change your directory
@@ -17,6 +26,11 @@ git clone git@github.com:desouzapreston/nvim.git
 git clone https://github.com/desouzapreston/nvim.git
 ```
 ***
+
+#### Install the Language Server Parsers
+```
+npm install -g typescript typescript-language-server vscode-langservers-extracted pyright
+```
 
 #### Put this at the end of your `~/.bashrc` file
 ##### Open the file

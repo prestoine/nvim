@@ -98,6 +98,8 @@ packer.startup(function(use)
     use 'junegunn/goyo.vim'
     use 'lukas-reineke/indent-blankline.nvim'
     use 'github/copilot.vim'
+    use 'neovim/nvim-lspconfig'
+
 
 
 	if PACKER_BOOTSTRAP then
@@ -111,3 +113,4 @@ require('plugin-configs.treesitter')
 require('plugin-configs.lualine')
 require('plugin-configs.nvim-tree')
 require('plugin-configs.telescope')
+require('lsp-setup')

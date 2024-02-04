@@ -63,6 +63,12 @@ map('n', '<C-j>', ':resize +2<CR>', opts)           -- Grow window down
 map('n', '<C-k>', ':resize -2<CR>', opts)           -- Shrink window up
 map('n', '<C-l>', ':vertical resize +2<CR>', opts)  -- Grow window right
 
+-- Snap windows with Alt+H/J/K/L
+map('n', '<A-h>', '<C-W>H', opts)
+map('n', '<A-j>', '<C-W>J', opts)
+map('n', '<A-k>', '<C-W>K', opts)
+map('n', '<A-l>', '<C-W>L', opts)
+
 -- New tab
 map('n', '<Leader>nw', ':tabnew<CR>', opts)
 
