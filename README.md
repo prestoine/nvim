@@ -6,6 +6,11 @@
 cd ~/.config/nvim
 ```
 
+#### Clone this repo
+```
+git clone ...
+```
+
 #### Put this at the end of your `~/.bashrc` file
 ```
 # Source NVim terminal customizations
