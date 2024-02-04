@@ -60,6 +60,9 @@ nvim .
 :PackerUpdate
 ```
 ```
+:PackerCompile
+```
+```
 :PackerSync
 ```
 ***
