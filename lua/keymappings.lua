@@ -41,7 +41,7 @@ map('n', '<Leader><Tab>', ':lua require("harpoon.ui").nav_next()<CR>', opts)
 
 -- Access Harpoon marked files with <Leader>h<number>
 for i = 1, 9 do
-    map('n', '<Leader>H' .. i, ':lua require("harpoon.ui").nav_file(' .. i .. ')<CR>', opts)
+    map('n', '<Leader>' .. i, ':lua require("harpoon.ui").nav_file(' .. i .. ')<CR>', opts)
 end
 
 -- Window and split management
@@ -74,7 +74,7 @@ map('n', '<Leader>nw', ':tabnew<CR>', opts)
 
 -- Switch to specific window number
 for i = 1, 9 do
-    map('n', '<Leader>W'..i, i..'gt', opts)
+    map('n', '<Leader>w'..i, i..'gt', opts)
 end
 
 -- terminal in new tab
