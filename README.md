@@ -2,7 +2,7 @@
 ### Before installing the Neovim configuration, ensure you have the following installed:
 ```
 Neovim (0.5 or newer)
-Node.js and npm (for installing LSP servers and other tools)
+Node.js and npm (for installing LSP servers/other tools)
 Git 
 ```
 *** 
