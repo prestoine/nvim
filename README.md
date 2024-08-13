@@ -3,7 +3,7 @@
 ```
 Neovim (0.5 or newer)
 Node.js and npm (for installing LSP servers and other tools)
-Git (for cloning the repository and installing some plugins)
+Git 
 ```
 *** 
 
