@@ -11,6 +11,9 @@ local function create_and_save_new_file()
   end
 end
 
+-- Replace all instances of a string: Press <Leader>R on the string to replace, type replacement string, then press y for single replace or a for full file replace
+vim.api.nvim_set_keymap('n', '<Leader>R', ':%s/<C-r><C-w>//gc<Left><Left><Left>', { noremap = true, silent = false })
+
 -- Toggle NvimTree
 map('n', '<Leader>m', ':NvimTreeToggle<CR>', opts)
 
