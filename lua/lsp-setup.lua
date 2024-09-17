@@ -34,7 +34,7 @@ lspconfig.pyright.setup{
 }
 
 -- JavaScript/TypeScript
-lspconfig.tsserver.setup{
+lspconfig.ts_ls.setup{
     on_attach = on_attach,
     flags = lsp_flags,
 }
@@ -71,6 +71,19 @@ lspconfig.astro.setup{
     flags = lsp_flags,
 }
 
+-- Terraform
+lspconfig.terraformls.setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    filetypes = { "terraform", "tf", "terraform-vars", "hcl", "conf.tpl" },
+}
+
+-- HCL (HashiCorp Configuration Language)
+lspconfig.tflint.setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+
 -- Create a global autocommand group for LSP
 vim.api.nvim_create_augroup("LspAttach_formatting", {})
 
@@ -85,7 +98,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 -- Preload LSP servers
-local preload_lsp_servers = {'astro', 'tsserver', 'html', 'cssls'}
+local preload_lsp_servers = {'astro', 'ts_ls', 'html', 'cssls', 'terraformls', 'tflint'}
 for _, server in ipairs(preload_lsp_servers) do
     lspconfig[server].setup{}
 end
+

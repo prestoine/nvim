@@ -8,6 +8,11 @@ vim.o.termguicolors = true
 vim.cmd('hi Normal guibg=NONE ctermbg=NONE')  -- Set normal background to transparent
 vim.cmd('hi LineNr guibg=NONE ctermbg=NONE')  -- Set line number background to transparent
 
+-- TPL Files
+vim.cmd([[
+  autocmd BufRead,BufNewFile *.conf.tpl set filetype=terraform
+]])
+
 -- Enable line wrapping
 vim.wo.wrap = true
 
@@ -65,7 +70,6 @@ packer.init({
 -- Plugins
 packer.startup(function(use)
 	use 'wbthomason/packer.nvim'
-	use 'nvim-treesitter/nvim-treesitter'
 	use 'numToStr/Comment.nvim'
 	use 'kdheepak/lazygit.nvim'
 	use { 'ThePrimeagen/harpoon', requires = { 'nvim-lua/plenary.nvim' } }
@@ -98,6 +102,7 @@ packer.startup(function(use)
     use 'junegunn/goyo.vim'
     use 'github/copilot.vim'
     use 'neovim/nvim-lspconfig'
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
 	if PACKER_BOOTSTRAP then
 		require('packer').sync()
