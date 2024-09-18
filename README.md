@@ -19,11 +19,11 @@ cd ~/.config/nvim
 ### Clone this repo
 #### SSH
 ```
-git clone git@github.com:desouzapreston/nvim.git
+git clone git@github.com:prestoine/nvim.git
 ```
 #### HTTPS
 ```
-git clone https://github.com/desouzapreston/nvim.git
+git clone https://github.com/prestoine/nvim.git
 ```
 ***
 
