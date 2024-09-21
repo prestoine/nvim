@@ -1,7 +1,7 @@
 # Prerequisites
 ### Before installing the Neovim configuration, ensure you have the following installed:
 ```
-Neovim (0.5 or newer)
+Neovim (0.9 or newer)
 Node.js and npm (for installing LSP servers/other tools)
 Git 
 ```
