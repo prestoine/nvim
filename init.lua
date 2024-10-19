@@ -93,12 +93,7 @@ packer.startup(function(use)
 	'norcalli/nvim-colorizer.lua',
 	config = function() require'colorizer'.setup() end,
 	}
-	use {
-	  'Mofiqul/vscode.nvim',
-	  config = function()
-	    vim.cmd('colorscheme vscode')
-	  end
-	}
+
     use 'junegunn/goyo.vim'
     use 'github/copilot.vim'
     use 'neovim/nvim-lspconfig'
