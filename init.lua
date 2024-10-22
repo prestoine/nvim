@@ -81,7 +81,6 @@ packer.startup(function(use)
 	use 'hrsh7th/cmp-nvim-lua'
 	use 'L3MON4D3/LuaSnip'
 	use 'saadparwaiz1/cmp_luasnip'
-	use 'morhetz/gruvbox'
 	use 'nvim-lualine/lualine.nvim'
 	use 'lukas-reineke/indent-blankline.nvim'
 	use 'lewis6991/gitsigns.nvim'
@@ -99,10 +98,19 @@ packer.startup(function(use)
     use 'neovim/nvim-lspconfig'
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
+    use 'morhetz/gruvbox'
+    use 'joshdick/onedark.vim'
+    use 'dracula/vim'
+    use 'drewtempelmeyer/palenight.vim'
+    use 'ayu-theme/ayu-vim'
+    use 'sainnhe/sonokai'
+
 	if PACKER_BOOTSTRAP then
 		require('packer').sync()
 	end
 end)
+
+vim.cmd('colorscheme ayu')
 
 -- Load key mappings and plugin configurations
 require('keymappings')

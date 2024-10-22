@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/dfg/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["ayu-vim"] = {
+    loaded = true,
+    path = "/home/dfg/.local/share/nvim/site/pack/packer/start/ayu-vim",
+    url = "https://github.com/ayu-theme/ayu-vim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/dfg/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -190,20 +195,40 @@ _G.packer_plugins = {
     path = "/home/dfg/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  ["onedark.vim"] = {
+    loaded = true,
+    path = "/home/dfg/.local/share/nvim/site/pack/packer/start/onedark.vim",
+    url = "https://github.com/joshdick/onedark.vim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/dfg/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["palenight.vim"] = {
+    loaded = true,
+    path = "/home/dfg/.local/share/nvim/site/pack/packer/start/palenight.vim",
+    url = "https://github.com/drewtempelmeyer/palenight.vim"
   },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/dfg/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  sonokai = {
+    loaded = true,
+    path = "/home/dfg/.local/share/nvim/site/pack/packer/start/sonokai",
+    url = "https://github.com/sainnhe/sonokai"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/dfg/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  vim = {
+    loaded = true,
+    path = "/home/dfg/.local/share/nvim/site/pack/packer/start/vim",
+    url = "https://github.com/dracula/vim"
   },
   ["which-key.nvim"] = {
     loaded = true,
