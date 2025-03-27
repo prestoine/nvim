@@ -110,7 +110,7 @@ packer.startup(function(use)
 	end
 end)
 
-vim.cmd('colorscheme ayu')
+vim.cmd('colorscheme sonokai')
 
 -- Load key mappings and plugin configurations
 require('keymappings')
