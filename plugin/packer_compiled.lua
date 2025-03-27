@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/dfg/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["alpha-nvim"] = {
+    loaded = true,
+    path = "/home/dfg/.local/share/nvim/site/pack/packer/start/alpha-nvim",
+    url = "https://github.com/goolord/alpha-nvim"
+  },
   ["ayu-vim"] = {
     loaded = true,
     path = "/home/dfg/.local/share/nvim/site/pack/packer/start/ayu-vim",
