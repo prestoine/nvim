@@ -59,7 +59,7 @@ mv ~/.config/nvim ~/.config/nvim.backup 2>/dev/null || true
 ### 2. Clone This Configuration
 ```bash
 # Clone directly to your Neovim config directory
-git clone https://github.com/yourusername/nvim.git ~/.config/nvim
+git clone https://github.com/prestoine/nvim.git ~/.config/nvim
 ```
 
 ### 3. Install Language Servers
