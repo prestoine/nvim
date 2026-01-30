@@ -23,6 +23,6 @@ export PS1="
 \[$(tput bold)\]\[$(tput setaf 2)\][\A]\[$(tput sgr0)\] "  # Time in green
 export PS1+="\[$(tput setaf 6)\]\u@\h\[$(tput sgr0)\] "    # Username and host in cyan
 export PS1+="\[$(tput setaf 5)\]\$(get_prompt_path)\[$(tput sgr0)\] "  # Directory path in purple
-export PS1+="\n\[$(tput setaf 3)\]😜 \[$(tput sgr0)\]"    # Winking emoji on new line in yellow
 export PS1+="\[$(tput setaf 4)\]>\[$(tput sgr0)\] "       # Prompt symbol '>' in blue
+export PS1+="\n\[$(tput setaf 3)\]❯ \[$(tput sgr0)\]"    # Arrow on new line in yellow
 

@@ -128,16 +128,17 @@ packer.startup(function(use)
         end
 end)
 
-vim.cmd('colorscheme sonokai')
-
 -- Load key mappings and plugin configurations in specific order
 require('keymappings')
-require('plugin-configs.treesitter')
+-- require('plugin-configs.treesitter')
 require('plugin-configs.lualine')
 require('plugin-configs.alpha')     -- Load Alpha before NvimTree
 require('plugin-configs.telescope')
 require('lsp-setup')
 require('plugin-configs.nvim-tree')  -- Load NvimTree last
+
+-- Set colorscheme
+vim.cmd('colorscheme gruvbox')
 
 -- Handle directory arguments with high priority
 vim.api.nvim_create_autocmd('VimEnter', {
